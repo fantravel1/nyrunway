@@ -128,151 +128,344 @@
     <!-- ===== PAGE HEADER ===== -->
     <section class="page-header" aria-label="En-t&ecirc;te de page">
       <div class="page-header__bg">
-        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1920&q=80" alt="Mannequin en coulisses de la New York Fashion Week" loading="eager">
+        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1920&q=80" alt="Mannequin en coulisses de la New York Fashion Week avec un &eacute;clairage dramatique" loading="eager">
         <div class="page-header__overlay"></div>
       </div>
       <div class="page-header__content">
-        <span class="page-header__label">Pilier V &mdash; Le QG</span>
+        <span class="page-header__label">Pilier V &mdash; Votre QG Fashion Week</span>
         <h1 class="page-header__title">Centre de Commande NYFW</h1>
-        <p class="page-header__subtitle">Votre quartier g&eacute;n&eacute;ral en temps r&eacute;el pour la New York Fashion Week &mdash; calendrier, lieux, d&eacute;buts, soir&eacute;es, kits presse et carte de style. Tout sur la NYFW en un seul endroit.</p>
+        <p class="page-header__subtitle">Votre quartier g&eacute;n&eacute;ral en temps r&eacute;el pour la New York Fashion Week &mdash; calendrier, lieux, d&eacute;buts, soir&eacute;es, kits presse et carte du street style, tout en un seul endroit.</p>
       </div>
     </section>
 
+    <!-- ===== BREADCRUMB ===== -->
+    <div class="breadcrumb">
+      <div class="container">
+        <a href="../fr/">Accueil</a>
+        <span class="breadcrumb__separator">/</span>
+        <span>Centre de Commande NYFW</span>
+      </div>
+    </div>
+
     <!-- ===== STATS BAR ===== -->
-    <section class="stats" aria-label="Statistiques NYFW">
+    <section class="stats" aria-label="Statistiques cl&eacute;s NYFW">
       <div class="container">
         <div class="stats__grid">
           <div class="stats__item fade-in">
-            <div class="stats__number" data-count="187">0</div>
-            <div class="stats__label">D&eacute;fil&eacute;s cette saison</div>
+            <div class="stats__number" style="font-size: var(--fs-h3); color: var(--color-accent);">5&ndash;10 sep. 2026</div>
+            <div class="stats__label">Prochaine NYFW</div>
           </div>
           <div class="stats__item fade-in">
-            <div class="stats__number" data-count="42">0</div>
-            <div class="stats__label">Lieux Officiels</div>
+            <div class="stats__number" data-count="180" data-suffix="+">0</div>
+            <div class="stats__label">D&eacute;fil&eacute;s pr&eacute;vus</div>
           </div>
           <div class="stats__item fade-in">
-            <div class="stats__number" data-count="28">0</div>
-            <div class="stats__label">D&eacute;buts de Cr&eacute;ateurs</div>
+            <div class="stats__number" data-count="24">0</div>
+            <div class="stats__label">Lieux</div>
           </div>
           <div class="stats__item fade-in">
-            <div class="stats__number" data-count="7">0</div>
-            <div class="stats__label">Jours de D&eacute;fil&eacute;s</div>
+            <div class="stats__number" data-count="32">0</div>
+            <div class="stats__label">Cr&eacute;ateurs d&eacute;butants</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== TABS ===== -->
-    <section class="content-section" aria-label="Sections NYFW">
+    <!-- ===== TABS SECTION ===== -->
+    <section class="content-section" id="schedule" aria-label="Programme et ressources NYFW">
       <div class="container">
-        <div class="section__header fade-in" style="text-align:center; margin-bottom: var(--space-lg);">
-          <span class="section-label">Tout sur la NYFW</span>
-          <h2 class="section-title">Explorez la Fashion Week</h2>
-          <p class="section-subtitle" style="margin: 0 auto;">Six dimensions de la New York Fashion Week document&eacute;es en profondeur. S&eacute;lectionnez une cat&eacute;gorie pour explorer.</p>
+        <div class="section__header fade-in" style="text-align: center; margin-bottom: var(--space-lg);">
+          <span class="section-label">Intelligence en temps r&eacute;el</span>
+          <h2 class="section-title">Tableau de Bord Fashion Week</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">Tout ce dont vous avez besoin pour la NYFW en un seul endroit &mdash; programme des d&eacute;fil&eacute;s, d&eacute;tails des lieux, talents &eacute;mergents, soir&eacute;es, mat&eacute;riel presse et carte du street style.</p>
         </div>
 
         <div class="tabs">
           <div class="tabs__nav">
-            <button class="tabs__btn active" data-tab="calendrier">Calendrier</button>
-            <button class="tabs__btn" data-tab="lieux">Lieux</button>
+            <button class="tabs__btn active" data-tab="calendar">Calendrier</button>
+            <button class="tabs__btn" data-tab="venues">Lieux</button>
             <button class="tabs__btn" data-tab="debuts">D&eacute;buts</button>
-            <button class="tabs__btn" data-tab="soirees">Soir&eacute;es</button>
-            <button class="tabs__btn" data-tab="presse">Presse</button>
-            <button class="tabs__btn" data-tab="style">Carte de Style</button>
+            <button class="tabs__btn" data-tab="afterparties">Soir&eacute;es</button>
+            <button class="tabs__btn" data-tab="presskits">Kits Presse</button>
+            <button class="tabs__btn" data-tab="streetstyle">Carte du Street Style</button>
           </div>
 
-          <!-- Tab: Calendrier -->
-          <div class="tabs__panel active" data-panel="calendrier">
-            <div class="content-grid content-grid--2">
-              <div class="info-card">
-                <div class="info-card__icon">&#128197;</div>
-                <h3 class="info-card__title">Calendrier Officiel</h3>
-                <p class="info-card__text">Le programme complet de la NYFW saison par saison : horaires des d&eacute;fil&eacute;s, pr&eacute;sentations, &eacute;v&eacute;nements sp&eacute;ciaux et c&eacute;r&eacute;monies. Mis &agrave; jour en temps r&eacute;el pendant la Fashion Week.</p>
+          <!-- Calendar Tab -->
+          <div class="tabs__panel active" data-panel="calendar">
+            <div class="icon-list">
+              <div class="icon-list__item">
+                <div class="icon-list__icon">09</div>
+                <div class="icon-list__text">
+                  <strong>Ven. 5 sep. &mdash; 9h00 &mdash; Elena Vasquez</strong>
+                  D&eacute;fil&eacute; d'ouverture. Spring Studios, Tribeca. Collection inaugurale explorant l'h&eacute;ritage textile dominicain avec un drap&eacute; architectural. Sur invitation uniquement.
+                </div>
               </div>
-              <div class="info-card">
-                <div class="info-card__icon">&#128336;</div>
-                <h3 class="info-card__title">Horaires Jour par Jour</h3>
-                <p class="info-card__text">Chaque journ&eacute;e de la Fashion Week d&eacute;taill&eacute;e heure par heure. D&eacute;fil&eacute;s du matin, pr&eacute;sentations de l'apr&egrave;s-midi, &eacute;v&eacute;nements du soir &mdash; ne manquez rien.</p>
+              <div class="icon-list__item">
+                <div class="icon-list__icon">09</div>
+                <div class="icon-list__text">
+                  <strong>Ven. 5 sep. &mdash; 12h00 &mdash; Marcus Chen-Williams</strong>
+                  Spring Studios, Tribeca. Collection PE27 : tailleur Est-Ouest m&ecirc;lant brocart de soie chinois et laine italienne. Presse + acheteurs.
+                </div>
+              </div>
+              <div class="icon-list__item">
+                <div class="icon-list__icon">09</div>
+                <div class="icon-list__text">
+                  <strong>Ven. 5 sep. &mdash; 16h00 &mdash; LaRue Collective</strong>
+                  The Shed, Hudson Yards. Vitrine multi-cr&eacute;ateurs pr&eacute;sentant six labels &eacute;mergents bas&eacute;s &agrave; Harlem. Ouvert au public sur inscription.
+                </div>
+              </div>
+              <div class="icon-list__item">
+                <div class="icon-list__icon">09</div>
+                <div class="icon-list__text">
+                  <strong>Sam. 6 sep. &mdash; 10h00 &mdash; Kowalski NYC</strong>
+                  Angel Orensanz Foundation, Lower East Side. Streetwear rencontre couture. Pr&eacute;sentation immersive accompagn&eacute;e de musique live par des artistes underground new-yorkais.
+                </div>
+              </div>
+              <div class="icon-list__item">
+                <div class="icon-list__icon">09</div>
+                <div class="icon-list__text">
+                  <strong>Sam. 6 sep. &mdash; 14h00 &mdash; House of Okonkwo</strong>
+                  Skylight Clarkson Square. Collection durabilit&eacute; utilisant 100 % de stocks dormants et mat&eacute;riaux r&eacute;cup&eacute;r&eacute;s. Chaque look poss&egrave;de une histoire d'origine tra&ccedil;able.
+                </div>
+              </div>
+              <div class="icon-list__item">
+                <div class="icon-list__icon">09</div>
+                <div class="icon-list__text">
+                  <strong>Sam. 6 sep. &mdash; 19h00 &mdash; Ari Delacroix</strong>
+                  Cipriani Wall Street. Robes du soir et tenues de gala masculines. Un retour au glamour hollywoodien classique avec une touche downtown new-yorkaise.
+                </div>
+              </div>
+              <div class="icon-list__item">
+                <div class="icon-list__icon">09</div>
+                <div class="icon-list__text">
+                  <strong>Dim. 7 sep. &mdash; 11h00 &mdash; Kim Sung-Park</strong>
+                  Spring Studios, Tribeca. Minimalisme cor&eacute;en rencontre utilit&eacute; new-yorkaise. Collection unisexe avec superposition modulaire et construction z&eacute;ro d&eacute;chet.
+                </div>
+              </div>
+              <div class="icon-list__item">
+                <div class="icon-list__icon">09</div>
+                <div class="icon-list__text">
+                  <strong>Dim. 7 sep. &mdash; 15h00 &mdash; Nadia Benzema</strong>
+                  Pier 17, Seaport District. Collection inspir&eacute;e du patrimoine nord-africain. Caftans brod&eacute;s &agrave; la main r&eacute;imagin&eacute;s en tailleur urbain structur&eacute;.
+                </div>
+              </div>
+              <div class="icon-list__item">
+                <div class="icon-list__icon">09</div>
+                <div class="icon-list__text">
+                  <strong>Lun. 8 sep. &mdash; 10h00 &mdash; Brooklyn Collective</strong>
+                  Industry City, Sunset Park. Vitrine collective de 12 cr&eacute;ateurs ind&eacute;pendants de Brooklyn. Ateliers ouverts, coupe de patrons en direct et vente directe au public.
+                </div>
+              </div>
+              <div class="icon-list__item">
+                <div class="icon-list__icon">09</div>
+                <div class="icon-list__text">
+                  <strong>Mer. 10 sep. &mdash; 20h00 &mdash; Grand Finale</strong>
+                  The Metropolitan Pavilion, Chelsea. Spectacle de cl&ocirc;ture multi-cr&eacute;ateurs. Les 10 meilleurs looks de la semaine repris sur sc&egrave;ne, accompagn&eacute;s d'un orchestre en direct.
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Tab: Lieux -->
-          <div class="tabs__panel" data-panel="lieux">
-            <div class="content-grid content-grid--2">
-              <div class="info-card">
-                <div class="info-card__icon">&#127963;</div>
-                <h3 class="info-card__title">Lieux Principaux</h3>
-                <p class="info-card__text">Du Spring Studios aux galeries de Chelsea, en passant par les lofts industriels de Tribeca &mdash; chaque lieu de la NYFW avec adresse, capacit&eacute; et historique des d&eacute;fil&eacute;s.</p>
+          <!-- Venues Tab -->
+          <div class="tabs__panel" data-panel="venues">
+            <div class="icon-list">
+              <div class="icon-list__item">
+                <div class="icon-list__icon">01</div>
+                <div class="icon-list__text">
+                  <strong>Spring Studios</strong>
+                  50 Varick Street, Tribeca. Capacit&eacute; : 800. Le si&egrave;ge de facto de la NYFW depuis 2015, offrant plusieurs salles de d&eacute;fil&eacute;, des installations en coulisses et des salles de presse r&eacute;parties sur quatre &eacute;tages.
+                </div>
               </div>
-              <div class="info-card">
-                <div class="info-card__icon">&#128205;</div>
-                <h3 class="info-card__title">Carte Interactive</h3>
-                <p class="info-card__text">Visualisez tous les lieux de la Fashion Week sur une carte interactive de Manhattan et Brooklyn. Planifiez vos d&eacute;placements entre les d&eacute;fil&eacute;s.</p>
+              <div class="icon-list__item">
+                <div class="icon-list__icon">02</div>
+                <div class="icon-list__text">
+                  <strong>The Shed, Hudson Yards</strong>
+                  545 West 30th Street, Hudson Yards. Capacit&eacute; : 1 200. Le plus r&eacute;cent lieu culturel de la ville, avec une enveloppe ext&eacute;rieure t&eacute;lescopique offrant des espaces flexibles pour les pr&eacute;sentations &agrave; grande &eacute;chelle.
+                </div>
+              </div>
+              <div class="icon-list__item">
+                <div class="icon-list__icon">03</div>
+                <div class="icon-list__text">
+                  <strong>Skylight Clarkson Square</strong>
+                  550 Washington Street, West Village. Capacit&eacute; : 600. Un loft industriel brut privil&eacute;gi&eacute; par les cr&eacute;ateurs recherchant une esth&eacute;tique d&eacute;pouill&eacute;e et downtown pour leurs d&eacute;fil&eacute;s.
+                </div>
+              </div>
+              <div class="icon-list__item">
+                <div class="icon-list__icon">04</div>
+                <div class="icon-list__text">
+                  <strong>Cipriani Wall Street</strong>
+                  55 Wall Street, Financial District. Capacit&eacute; : 950. Un ancien hall bancaire n&eacute;oclassique majestueux avec des plafonds de 21 m&egrave;tres, des colonnes et des sols en marbre &mdash; le lieu de choix pour les d&eacute;fil&eacute;s en tenue de soir&eacute;e.
+                </div>
+              </div>
+              <div class="icon-list__item">
+                <div class="icon-list__icon">05</div>
+                <div class="icon-list__text">
+                  <strong>Angel Orensanz Foundation</strong>
+                  172 Norfolk Street, Lower East Side. Capacit&eacute; : 400. Une ancienne synagogue n&eacute;o-gothique transform&eacute;e en centre artistique. Ses arches spectaculaires et ses vitraux cr&eacute;ent une atmosph&egrave;re inoubliable pour les pr&eacute;sentations intimistes.
+                </div>
+              </div>
+              <div class="icon-list__item">
+                <div class="icon-list__icon">06</div>
+                <div class="icon-list__text">
+                  <strong>Pier 17, Seaport District</strong>
+                  89 South Street, Lower Manhattan. Capacit&eacute; : 700. Un lieu en bord de mer offrant des vues panoramiques sur le pont de Brooklyn et l'East River. Espaces en toiture et en int&eacute;rieur disponibles.
+                </div>
+              </div>
+              <div class="icon-list__item">
+                <div class="icon-list__icon">07</div>
+                <div class="icon-list__text">
+                  <strong>The Metropolitan Pavilion</strong>
+                  125 West 18th Street, Chelsea. Capacit&eacute; : 550. Un espace &eacute;v&eacute;nementiel polyvalent &agrave; Chelsea avec murs blancs, sols en b&eacute;ton poli et sc&egrave;ne modulaire, populaire pour les d&eacute;fil&eacute;s collectifs multi-cr&eacute;ateurs.
+                </div>
+              </div>
+              <div class="icon-list__item">
+                <div class="icon-list__icon">08</div>
+                <div class="icon-list__text">
+                  <strong>Industry City</strong>
+                  220 36th Street, Sunset Park, Brooklyn. Capacit&eacute; : 1 000. Un vaste campus d'entrep&ocirc;ts portuaires r&eacute;habilit&eacute;s, de plus en plus utilis&eacute; pour les d&eacute;fil&eacute;s hors calendrier et les vitrines de cr&eacute;ateurs ind&eacute;pendants.
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Tab: D&eacute;buts -->
+          <!-- Debuts Tab -->
           <div class="tabs__panel" data-panel="debuts">
-            <div class="content-grid content-grid--2">
-              <div class="info-card">
-                <div class="info-card__icon">&#11088;</div>
-                <h3 class="info-card__title">Nouveaux Cr&eacute;ateurs</h3>
-                <p class="info-card__text">Les cr&eacute;ateurs qui pr&eacute;sentent leur premi&egrave;re collection &agrave; la NYFW cette saison. Biographies, influences, pr&eacute;visions &mdash; rep&eacute;rez les futures &eacute;toiles avant tout le monde.</p>
+            <div class="section__header fade-in" style="margin-bottom: var(--space-md);">
+              <p class="section-subtitle">32 cr&eacute;ateurs font leurs d&eacute;buts au calendrier officiel de la NYFW cette saison. Voici ceux qui suscitent le plus d'engouement dans l'industrie.</p>
+            </div>
+            <div class="content-grid content-grid--3">
+              <div class="info-card fade-in">
+                <div class="info-card__icon">01</div>
+                <h3 class="info-card__title">Amara Diallo</h3>
+                <p class="info-card__text">Cr&eacute;atrice s&eacute;n&eacute;galo-am&eacute;ricaine m&ecirc;lant les imprim&eacute;s wax ouest-africains au tailleur structur&eacute; new-yorkais. Dipl&ocirc;m&eacute;e du FIT. Form&eacute;e au Brooklyn Fashion Design Accelerator. D&eacute;fil&eacute; au Spring Studios, 7 sep.</p>
               </div>
-              <div class="info-card">
-                <div class="info-card__icon">&#127942;</div>
-                <h3 class="info-card__title">D&eacute;buts M&eacute;morables</h3>
-                <p class="info-card__text">Retour sur les d&eacute;buts les plus marquants de l'histoire de la NYFW &mdash; de Marc Jacobs &agrave; Alexander Wang, les premi&egrave;res collections qui ont tout chang&eacute;.</p>
+              <div class="info-card fade-in">
+                <div class="info-card__icon">02</div>
+                <h3 class="info-card__title">Yuki Tanaka</h3>
+                <p class="info-card__text">N&eacute;e &agrave; Tokyo, form&eacute;e &agrave; Parsons. Sp&eacute;cialiste du patronage z&eacute;ro d&eacute;chet et des v&ecirc;tements modulaires se transformant en trois silhouettes distinctes. The Shed, 6 sep.</p>
+              </div>
+              <div class="info-card fade-in">
+                <div class="info-card__icon">03</div>
+                <h3 class="info-card__title">Sofia Reyes-Patel</h3>
+                <p class="info-card__text">H&eacute;ritage colombo-indien. Techniques de crochet &agrave; la main transmises sur trois g&eacute;n&eacute;rations, adapt&eacute;es au pr&ecirc;t-&agrave;-porter. Finaliste du CFDA/Vogue Fashion Fund. Skylight Clarkson, 8 sep.</p>
+              </div>
+              <div class="info-card fade-in">
+                <div class="info-card__icon">04</div>
+                <h3 class="info-card__title">Elijah Brooks</h3>
+                <p class="info-card__text">Ancienne l&eacute;gende du ballroom de Harlem devenu cr&eacute;ateur. Tenues de soir&eacute;e non genr&eacute;es canalisant l'&eacute;nergie des performances de podium. Angel Orensanz, 9 sep.</p>
+              </div>
+              <div class="info-card fade-in">
+                <div class="info-card__icon">05</div>
+                <h3 class="info-card__title">Ingrid Halvorsen</h3>
+                <p class="info-card__text">Minimalisme scandinave rencontre l'artisanat du Garment District. Toute la production se fait dans un rayon de cinq p&acirc;t&eacute;s de maisons autour de la 38e Rue. Metropolitan Pavilion, 8 sep.</p>
+              </div>
+              <div class="info-card fade-in">
+                <div class="info-card__icon">06</div>
+                <h3 class="info-card__title">Deshawn Carter</h3>
+                <p class="info-card__text">&Eacute;lev&eacute; dans le Bronx. Sa collection inaugurale r&eacute;imagine le v&ecirc;tement de travail &agrave; travers le prisme de la culture hip-hop et de l'esth&eacute;tique des chantiers. Industry City, 10 sep.</p>
               </div>
             </div>
           </div>
 
-          <!-- Tab: Soir&eacute;es -->
-          <div class="tabs__panel" data-panel="soirees">
-            <div class="content-grid content-grid--2">
-              <div class="info-card">
-                <div class="info-card__icon">&#127878;</div>
-                <h3 class="info-card__title">Soir&eacute;es Officielles</h3>
-                <p class="info-card__text">Les &eacute;v&eacute;nements nocturnes de la Fashion Week : galas, d&icirc;ners de cr&eacute;ateurs, lancements de collections et c&eacute;l&eacute;brations exclusives.</p>
+          <!-- After-Parties Tab -->
+          <div class="tabs__panel" data-panel="afterparties">
+            <div class="icon-list">
+              <div class="icon-list__item">
+                <div class="icon-list__icon">VEN</div>
+                <div class="icon-list__text">
+                  <strong>Gala d'ouverture &mdash; The Standard, High Line</strong>
+                  5 sep., 22h00. Organis&eacute; par le CFDA. Cocktails sur le toit avec vue sur l'Hudson. Tenue de soir&eacute;e facultative. Sur invitation professionnelle uniquement. DJ sets par Venus X.
+                </div>
               </div>
-              <div class="info-card">
-                <div class="info-card__icon">&#127864;</div>
-                <h3 class="info-card__title">After-parties</h3>
-                <p class="info-card__text">Le guide des soir&eacute;es qui prolongent la Fashion Week jusqu'au petit matin. O&ugrave; se retrouvent les cr&eacute;ateurs, mannequins, acheteurs et journalistes apr&egrave;s les d&eacute;fil&eacute;s.</p>
+              <div class="icon-list__item">
+                <div class="icon-list__icon">SAM</div>
+                <div class="icon-list__text">
+                  <strong>Brooklyn After Dark &mdash; House of Yes, Bushwick</strong>
+                  6 sep., 23h00. La soir&eacute;e officieuse des cr&eacute;ateurs. Art performatif, acrobaties a&eacute;riennes et battle de podium sur la piste de danse. Ouvert aux porteurs de badge NYFW.
+                </div>
+              </div>
+              <div class="icon-list__item">
+                <div class="icon-list__icon">DIM</div>
+                <div class="icon-list__text">
+                  <strong>&Eacute;l&eacute;gance Uptown &mdash; The Apollo Theater, Harlem</strong>
+                  7 sep., 21h00. C&eacute;l&eacute;bration de l'excellence de la mode noire. Performances live, pop-up vintage et table ronde avec des laur&eacute;ats des CFDA Awards.
+                </div>
+              </div>
+              <div class="icon-list__item">
+                <div class="icon-list__icon">LUN</div>
+                <div class="icon-list__text">
+                  <strong>Rencontres &Eacute;mergentes &mdash; Public Records, Gowanus</strong>
+                  8 sep., 20h00. Soir&eacute;e de r&eacute;seautage pour cr&eacute;ateurs d&eacute;butants, acheteurs et presse. DJ sets vinyle, bar &agrave; vin nature et revues de portfolios avec des mentors de l'industrie.
+                </div>
+              </div>
+              <div class="icon-list__item">
+                <div class="icon-list__icon">MER</div>
+                <div class="icon-list__text">
+                  <strong>Spectacle de Cl&ocirc;ture &mdash; Cipriani 42nd Street</strong>
+                  10 sep., 22h30. La grande c&eacute;l&eacute;bration finale. C&eacute;r&eacute;monie de remise des prix : Meilleure Collection, Meilleur D&eacute;but et Photographe Street Style de la Saison.
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Tab: Presse -->
-          <div class="tabs__panel" data-panel="presse">
+          <!-- Press Kits Tab -->
+          <div class="tabs__panel" data-panel="presskits">
+            <div class="section__header fade-in" style="margin-bottom: var(--space-md);">
+              <p class="section-subtitle">Mat&eacute;riel de presse t&eacute;l&eacute;chargeable pour les m&eacute;dias accr&eacute;dit&eacute;s couvrant la NYFW. Les ressources sont mises &agrave; jour 48 heures avant chaque d&eacute;fil&eacute;.</p>
+            </div>
             <div class="content-grid content-grid--2">
-              <div class="info-card">
-                <div class="info-card__icon">&#128240;</div>
-                <h3 class="info-card__title">Kits Presse</h3>
-                <p class="info-card__text">Acc&egrave;s aux dossiers de presse des cr&eacute;ateurs, lookbooks, biographies et images haute r&eacute;solution pour les journalistes et les m&eacute;dias accr&eacute;dit&eacute;s.</p>
+              <div class="info-card fade-in">
+                <div class="info-card__icon">PDF</div>
+                <h3 class="info-card__title">Panorama de la Saison NYFW</h3>
+                <p class="info-card__text">Dossier de presse complet avec th&eacute;matique de la saison, programmation des cr&eacute;ateurs, plan des lieux, horaires des navettes, directives d'accr&eacute;ditation m&eacute;dia et coordonn&eacute;es cl&eacute;s pour tous les &eacute;v&eacute;nements officiels.</p>
               </div>
-              <div class="info-card">
-                <div class="info-card__icon">&#127909;</div>
-                <h3 class="info-card__title">Couverture M&eacute;diatique</h3>
-                <p class="info-card__text">Analyse de la couverture presse de chaque saison : quels cr&eacute;ateurs ont domin&eacute; les gros titres, quelles tendances ont fait parler, quels moments ont marqu&eacute; les esprits.</p>
+              <div class="info-card fade-in">
+                <div class="info-card__icon">IMG</div>
+                <h3 class="info-card__title">Lookbooks Haute R&eacute;solution</h3>
+                <p class="info-card__text">Images de lookbooks avant d&eacute;fil&eacute; pour les cr&eacute;ateurs &agrave; l'affiche, class&eacute;es par date et nom de collection. Disponibles en formats pr&ecirc;ts pour l'impression (300 DPI) et optimis&eacute;s pour le web.</p>
+              </div>
+              <div class="info-card fade-in">
+                <div class="info-card__icon">BIO</div>
+                <h3 class="info-card__title">Biographies des Cr&eacute;ateurs</h3>
+                <p class="info-card__text">Biographies presse standardis&eacute;es pour les 180+ cr&eacute;ateurs de la saison, incluant portraits, historique de marque, collections notables, listes de points de vente et r&eacute;seaux sociaux.</p>
+              </div>
+              <div class="info-card fade-in">
+                <div class="info-card__icon">MAP</div>
+                <h3 class="info-card__title">Guide des Lieux &amp; Logistique</h3>
+                <p class="info-card__text">Plans d&eacute;taill&eacute;s, circuits d'acc&egrave;s aux coulisses, identifiants Wi-Fi, emplacements des salles de r&eacute;daction et logistique de transport pour chaque lieu officiel de la NYFW.</p>
               </div>
             </div>
           </div>
 
-          <!-- Tab: Carte de Style -->
-          <div class="tabs__panel" data-panel="style">
-            <div class="content-grid content-grid--2">
-              <div class="info-card">
-                <div class="info-card__icon">&#128083;</div>
-                <h3 class="info-card__title">Tendances de la Saison</h3>
-                <p class="info-card__text">Les grandes tendances qui &eacute;mergent des podiums de la NYFW : couleurs dominantes, silhouettes r&eacute;currentes, tissus favoris et accessoires incontournables.</p>
+          <!-- Street Style Heat Map Tab -->
+          <div class="tabs__panel" data-panel="streetstyle">
+            <div class="section__header fade-in" style="margin-bottom: var(--space-md);">
+              <p class="section-subtitle">Donn&eacute;es en temps r&eacute;el sur les meilleurs spots de street style autour des d&eacute;fil&eacute;s de la NYFW. Mis &agrave; jour par nos photographes d&eacute;ploy&eacute;s &agrave; travers la ville.</p>
+            </div>
+            <div class="content-grid content-grid--3">
+              <div class="info-card fade-in" style="border-left: 3px solid var(--color-accent);">
+                <h3 class="info-card__title">Spring Studios, Tribeca</h3>
+                <p class="info-card__text">L'&eacute;picentre du street style NYFW. Varick Street et les rues adjacentes se transforment en podium chaque matin entre 8h et 10h, puis de 17h &agrave; 19h. Plus forte concentration de photographes.</p>
               </div>
-              <div class="info-card">
-                <div class="info-card__icon">&#128200;</div>
-                <h3 class="info-card__title">Analyses Stylistiques</h3>
-                <p class="info-card__text">Des analyses approfondies des directions esth&eacute;tiques prises par les cr&eacute;ateurs new-yorkais &mdash; donn&eacute;es, contexte culturel et pr&eacute;visions pour la saison suivante.</p>
+              <div class="info-card fade-in" style="border-left: 3px solid var(--color-accent);">
+                <h3 class="info-card__title">The Shed, Hudson Yards</h3>
+                <p class="info-card__text">Nouveau point n&eacute;vralgique depuis 2024. La passerelle sur&eacute;lev&eacute;e reliant la High Line au Shed cr&eacute;e un couloir naturel pour le street style. Les meilleurs angles de prise de vue se trouvent &agrave; l'entr&eacute;e de la 30e Rue.</p>
+              </div>
+              <div class="info-card fade-in" style="border-left: 3px solid var(--color-accent);">
+                <h3 class="info-card__title">Mercer Street, SoHo</h3>
+                <p class="info-card__text">Les p&acirc;t&eacute;s de maisons pav&eacute;s entre Houston et Broome restent la r&eacute;f&eacute;rence absolue du street style hors programme. R&eacute;dactrices de mode, stylistes et visiteurs de showrooms y cr&eacute;ent un flux constant de looks.</p>
+              </div>
+              <div class="info-card fade-in" style="border-left: 3px solid var(--color-accent);">
+                <h3 class="info-card__title">Dimes Square, LES</h3>
+                <p class="info-card__text">La zone officieuse de l'apr&egrave;s-spectacle. Canal Street et Division Street attirent la sc&egrave;ne downtown entre les d&eacute;fil&eacute;s. Les looks plus audacieux et exp&eacute;rimentaux dominent ici, surtout apr&egrave;s 20h.</p>
+              </div>
+              <div class="info-card fade-in" style="border-left: 3px solid var(--color-accent);">
+                <h3 class="info-card__title">Industry City, Brooklyn</h3>
+                <p class="info-card__text">La r&eacute;ponse de Brooklyn &agrave; la Fashion Week de Manhattan. La promenade du front de mer et les cours int&eacute;rieures attirent un public radicalement diff&eacute;rent : cr&eacute;ateurs ind&eacute;pendants, artistes et d&eacute;fenseurs de la mode durable.</p>
+              </div>
+              <div class="info-card fade-in" style="border-left: 3px solid var(--color-accent);">
+                <h3 class="info-card__title">Corridor Cipriani, FiDi</h3>
+                <p class="info-card__text">Wall Street se m&eacute;tamorphose pendant les d&eacute;fil&eacute;s du soir. Le croisement de Broad Street et Wall Street devient une destination pour les looks de gala et les arriv&eacute;es spectaculaires avant les shows.</p>
               </div>
             </div>
           </div>
@@ -280,108 +473,154 @@
       </div>
     </section>
 
-    <!-- ===== INFO CARDS: NYFW Details ===== -->
-    <section class="section section--cream" aria-label="D&eacute;tails NYFW">
+    <!-- ===== NYFW RESOURCES GRID ===== -->
+    <section class="content-section section--cream" aria-label="Ressources NYFW">
       <div class="container">
-        <div class="section__header fade-in" style="text-align:center; margin-bottom: var(--space-lg);">
-          <span class="section-label">Guide complet</span>
-          <h2 class="section-title">Tout Savoir sur la NYFW</h2>
+        <div class="section__header fade-in" style="text-align: center; margin-bottom: var(--space-lg);">
+          <span class="section-label">Tout ce qu'il vous faut</span>
+          <h2 class="section-title">Ressources NYFW</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">La bo&icirc;te &agrave; outils compl&egrave;te pour naviguer la New York Fashion Week &mdash; que vous soyez acheteur, r&eacute;dacteur, cr&eacute;ateur, photographe, &eacute;tudiant ou passionn&eacute; de mode.</p>
         </div>
 
         <div class="content-grid content-grid--3">
           <div class="info-card fade-in">
-            <div class="info-card__icon">&#128176;</div>
-            <h3 class="info-card__title">Acc&eacute;der &agrave; la NYFW</h3>
-            <p class="info-card__text">Guide complet sur les accr&eacute;ditations, les invitations et les moyens d'acc&eacute;der aux d&eacute;fil&eacute;s &mdash; pour les professionnels comme pour les passionn&eacute;s.</p>
+            <div class="info-card__icon">CAL</div>
+            <h3 class="info-card__title">Calendrier des D&eacute;fil&eacute;s</h3>
+            <p class="info-card__text">Le programme complet de la NYFW avec horaires, cr&eacute;ateurs, lieux et statut RSVP. Filtrable par jour, lieu, cat&eacute;gorie de cr&eacute;ateur et type de d&eacute;fil&eacute;. Synchronisable avec votre agenda.</p>
           </div>
           <div class="info-card fade-in">
-            <div class="info-card__icon">&#128222;</div>
-            <h3 class="info-card__title">R&eacute;seautage</h3>
-            <p class="info-card__text">O&ugrave; et comment rencontrer les acteurs cl&eacute;s de l'industrie pendant la Fashion Week. Les &eacute;v&eacute;nements, les lieux et les codes &agrave; conna&icirc;tre.</p>
+            <div class="info-card__icon">MAP</div>
+            <h3 class="info-card__title">Index des Lieux</h3>
+            <p class="info-card__text">Chaque lieu de la NYFW cartographi&eacute; avec capacit&eacute;, accessibilit&eacute;, sp&eacute;cifications coulisses, transports &agrave; proximit&eacute; et stationnement. Inclut les donn&eacute;es historiques des cr&eacute;ateurs ayant d&eacute;fil&eacute; dans chaque lieu.</p>
           </div>
           <div class="info-card fade-in">
-            <div class="info-card__icon">&#127760;</div>
-            <h3 class="info-card__title">NYFW vs le Monde</h3>
-            <p class="info-card__text">Comment la Fashion Week de New York se positionne face &agrave; Paris, Milan, Londres et Tokyo. Diff&eacute;rences de format, d'esth&eacute;tique et d'influence.</p>
+            <div class="info-card__icon">NEW</div>
+            <h3 class="info-card__title">Suivi des D&eacute;buts</h3>
+            <p class="info-card__text">Profils de chaque cr&eacute;ateur faisant ses d&eacute;buts au calendrier NYFW cette saison. Parcours, ADN esth&eacute;tique, formation, mentors et points cl&eacute;s &agrave; surveiller dans leurs premi&egrave;res collections.</p>
+          </div>
+          <div class="info-card fade-in">
+            <div class="info-card__icon">NIT</div>
+            <h3 class="info-card__title">Guide des Soir&eacute;es</h3>
+            <p class="info-card__text">Le guide s&eacute;lectionn&eacute; de la vie nocturne NYFW. Galas officiels, soir&eacute;es officieuses, d&icirc;ners de cr&eacute;ateurs, activations de marques et les adresses tardives o&ugrave; se concluent les vrais accords.</p>
+          </div>
+          <div class="info-card fade-in">
+            <div class="info-card__icon">TKT</div>
+            <h3 class="info-card__title">Acc&egrave;s aux D&eacute;fil&eacute;s</h3>
+            <p class="info-card__text">Comment acc&eacute;der aux d&eacute;fil&eacute;s NYFW &agrave; tous les niveaux &mdash; adh&eacute;sion CFDA, accr&eacute;ditation presse, &eacute;v&eacute;nements ouverts au public, liens de diffusion en direct et appels &agrave; candidatures pour cr&eacute;ateurs &eacute;mergents.</p>
+          </div>
+          <div class="info-card fade-in">
+            <div class="info-card__icon">STR</div>
+            <h3 class="info-card__title">Carte du Street Style</h3>
+            <p class="info-card__text">Carte actualis&eacute;e en temps r&eacute;el des meilleurs spots de street style autour des lieux NYFW. Densit&eacute; de photographes, horaires de pointe et quartiers produisant les looks les plus remarquables.</p>
+          </div>
+          <div class="info-card fade-in">
+            <div class="info-card__icon">PRE</div>
+            <h3 class="info-card__title">Hub Kits Presse</h3>
+            <p class="info-card__text">Acc&egrave;s centralis&eacute; au mat&eacute;riel presse de chaque cr&eacute;ateur NYFW. Lookbooks, biographies de marque, images haute r&eacute;solution et contacts presse officiels &mdash; le tout dans une base de donn&eacute;es consultable.</p>
+          </div>
+          <div class="info-card fade-in">
+            <div class="info-card__icon">FLY</div>
+            <h3 class="info-card__title">Guide de Voyage</h3>
+            <p class="info-card__text">H&ocirc;tels proches des lieux NYFW, transports entre les d&eacute;fil&eacute;s, restaurants recommand&eacute;s pour les repas d'affaires et guides de quartiers pour ceux qui d&eacute;couvrent New York pendant la Fashion Week.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== HISTORY SPLIT BLOCK ===== -->
-    <section class="section section--dark" aria-label="Histoire de la NYFW">
+    <!-- ===== NYFW HISTORY SPLIT BLOCK ===== -->
+    <section class="content-section" aria-label="Histoire de la NYFW">
       <div class="container">
         <div class="split-block fade-in">
           <div class="split-block__image">
-            <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=80" alt="D&eacute;fil&eacute; de mode historique &agrave; New York" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=80" alt="Mannequins d&eacute;filant lors d'un d&eacute;fil&eacute; historique de la New York Fashion Week" loading="lazy">
           </div>
           <div class="split-block__content">
-            <span class="split-block__label" style="color: var(--color-accent);">De la Press Week aux podiums mondiaux</span>
-            <h2 class="split-block__title" style="color: var(--color-white);">L'Histoire de la NYFW</h2>
-            <p class="split-block__text" style="color: rgba(255,255,255,0.7);">Tout a commenc&eacute; en 1943, quand Eleanor Lambert a organis&eacute; la premi&egrave;re Press Week pour d&eacute;tourner l'attention des journalistes de mode am&eacute;ricains de la haute couture parisienne. Ce qui &eacute;tait un acte de r&eacute;bellion commerciale est devenu l'&eacute;v&eacute;nement mode le plus m&eacute;diatique de la plan&egrave;te.</p>
-            <p class="split-block__text" style="color: rgba(255,255,255,0.7);">Des tentes de Bryant Park au Lincoln Center, du num&eacute;rique post-pand&eacute;mie aux lieux dispers&eacute;s d'aujourd'hui &mdash; la NYFW n'a jamais cess&eacute; de se r&eacute;inventer, refl&eacute;tant l'&eacute;nergie in&eacute;puisable de la ville qui l'abrite.</p>
-            <a href="runway-archive.html" class="btn btn--primary">Explorer les archives &rarr;</a>
+            <span class="split-block__label">L'histoire des origines</span>
+            <h2 class="split-block__title">De la Press Week au ph&eacute;nom&egrave;ne mondial</h2>
+            <p class="split-block__text">La New York Fashion Week trouve ses origines en 1943, lorsque l'attach&eacute;e de presse Eleanor Lambert a organis&eacute; la toute premi&egrave;re &laquo; Press Week &raquo; pour d&eacute;tourner l'attention de la mode fran&ccedil;aise pendant la Seconde Guerre mondiale. Ce qui a d&eacute;but&eacute; comme un effort strat&eacute;gique de communication dans un modeste salon d'h&ocirc;tel est devenu l'&eacute;v&eacute;nement mode le plus commercialement significatif au monde.</p>
+            <p class="split-block__text">Des tentes de Bryant Park au Lincoln Center, des d&eacute;fil&eacute;s dispers&eacute;s &agrave; travers le sud de Manhattan au virage num&eacute;rique de 2020, la NYFW n'a cess&eacute; de se r&eacute;inventer. Aujourd'hui, elle g&eacute;n&egrave;re un impact &eacute;conomique estim&eacute; &agrave; 900 millions de dollars pour la ville de New York chaque saison et sert de rampe de lancement aux cr&eacute;ateurs qui d&eacute;finissent la mode mondiale.</p>
+            <p class="split-block__text">Contrairement &agrave; Paris (haute couture), Milan (produits de luxe) ou Londres (avant-garde), la New York Fashion Week s'est toujours d&eacute;finie par son &eacute;nergie commerciale, son esprit d&eacute;mocratique et sa diversit&eacute; culturelle &mdash; un reflet direct de la ville elle-m&ecirc;me.</p>
+            <a href="runway-archive.html" class="btn btn--ghost">Explorer les archives compl&egrave;tes du podium <span class="arrow">&rarr;</span></a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== FAQ ===== -->
-    <section class="faq-section section" aria-label="Questions fr&eacute;quentes">
+    <!-- ===== FEATURED VENUE ===== -->
+    <section class="content-section section--dark" aria-label="Lieu &agrave; la une">
+      <div class="container">
+        <div class="split-block split-block--reverse fade-in">
+          <div class="split-block__image">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80" alt="Spring Studios &agrave; Tribeca am&eacute;nag&eacute; pour un d&eacute;fil&eacute; de la New York Fashion Week" loading="lazy">
+          </div>
+          <div class="split-block__content">
+            <span class="split-block__label" style="color: var(--color-accent);">Lieu &agrave; la une</span>
+            <h2 class="split-block__title" style="color: var(--color-white);">Spring Studios, Tribeca</h2>
+            <p class="split-block__text" style="color: rgba(255,255,255,0.7);">Depuis qu'il est devenu le p&ocirc;le principal de la NYFW en 2015, Spring Studios au 50 Varick Street a accueilli certains des moments de podium les plus m&eacute;morables de la derni&egrave;re d&eacute;cennie. Ses quatre &eacute;tages offrent 5 500 m&egrave;tres carr&eacute;s d'espace &eacute;v&eacute;nementiel flexible, du Studio 2 intimiste (capacit&eacute; 200) &agrave; la vaste Galerie Principale (capacit&eacute; 800).</p>
+            <p class="split-block__text" style="color: rgba(255,255,255,0.7);">Les colonnes de b&eacute;ton brut, les briques apparentes et les verri&egrave;res industrielles du b&acirc;timent sont devenues aussi embl&eacute;matiques que les collections pr&eacute;sent&eacute;es entre ses murs. Des cr&eacute;ateurs de Tom Ford et Coach &agrave; Proenza Schouler et LaQuan Smith y ont mis en sc&egrave;ne des d&eacute;fil&eacute;s d&eacute;cisifs, attir&eacute;s par la combinaison entre la rudesse downtown et la capacit&eacute; de production haut de gamme du lieu.</p>
+            <p class="split-block__text" style="color: rgba(255,255,255,0.7);">Situ&eacute; au carrefour de Tribeca et Hudson Square, Spring Studios b&eacute;n&eacute;ficie &eacute;galement de certaines des meilleures conditions de photographie de street style de la ville &mdash; larges trottoirs pav&eacute;s, lumi&egrave;re naturelle constante et un d&eacute;cor architectural qui donne &agrave; chaque tenue un rendu &eacute;ditorial.</p>
+            <a href="industry-map.html" class="btn btn--ghost">Voir tous les lieux NYFW sur la carte de l'industrie <span class="arrow">&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="faq-section section" id="faq" aria-label="Questions fr&eacute;quentes sur la NYFW">
       <div class="container container--narrow">
-        <div class="section__header fade-in" style="text-align:center; margin-bottom: var(--space-lg);">
+        <div class="section__header fade-in" style="text-align: center; margin-bottom: var(--space-lg);">
           <span class="section-label">Questions &amp; R&eacute;ponses</span>
-          <h2 class="section-title">&Agrave; propos de la NYFW</h2>
+          <h2 class="section-title">FAQ NYFW</h2>
         </div>
 
         <div class="faq-item">
           <button class="faq-item__question" aria-expanded="false">
-            Quand a lieu la New York Fashion Week ?
+            Quand a lieu la prochaine New York Fashion Week ?
             <span class="faq-item__icon">+</span>
           </button>
           <div class="faq-item__answer">
-            <p>La NYFW a lieu deux fois par an : en f&eacute;vrier pour les collections Automne/Hiver et en septembre pour les collections Printemps/&Eacute;t&eacute;. Chaque session dure environ sept jours, avec des pr&eacute;sentations et &eacute;v&eacute;nements suppl&eacute;mentaires qui s'&eacute;tendent parfois au-del&agrave; du calendrier officiel.</p>
+            <p>La New York Fashion Week a lieu deux fois par an : les collections Printemps/&Eacute;t&eacute; sont pr&eacute;sent&eacute;es en septembre et les collections Automne/Hiver en f&eacute;vrier. La prochaine NYFW est pr&eacute;vue du 5 au 10 septembre 2026, avec plus de 180 d&eacute;fil&eacute;s r&eacute;partis dans 24 lieux &agrave; Manhattan et Brooklyn. Le calendrier officiel est g&eacute;r&eacute; par le CFDA (Council of Fashion Designers of America) et publi&eacute; environ six semaines avant le d&eacute;but de chaque Fashion Week.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-item__question" aria-expanded="false">
-            Peut-on assister &agrave; la NYFW sans invitation ?
+            Comment assister aux d&eacute;fil&eacute;s de la New York Fashion Week ?
             <span class="faq-item__icon">+</span>
           </button>
           <div class="faq-item__answer">
-            <p>Les d&eacute;fil&eacute;s principaux sont sur invitation. Cependant, de nombreux &eacute;v&eacute;nements parall&egrave;les sont ouverts au public ou accessibles avec un billet. Le street style autour des lieux de d&eacute;fil&eacute;s est &eacute;galement un spectacle en soi et enti&egrave;rement accessible &agrave; tous.</p>
+            <p>Les d&eacute;fil&eacute;s NYFW sont principalement sur invitation, r&eacute;serv&eacute;s aux acheteurs, &agrave; la presse, aux c&eacute;l&eacute;brit&eacute;s et aux professionnels de l'industrie. Toutefois, plusieurs voies d'acc&egrave;s existent : l'accr&eacute;ditation presse via le CFDA pour les journalistes et r&eacute;dacteurs en exercice ; l'inscription acheteur pour les professionnels du retail et du wholesale ; les &eacute;v&eacute;nements ouverts au public comme la plateforme NYFW: The Shows, qui propose des exp&eacute;riences payantes et des retransmissions en direct ; et les vitrines de cr&eacute;ateurs &eacute;mergents et &eacute;v&eacute;nements hors calendrier, qui accueillent souvent les &eacute;tudiants en mode et les passionn&eacute;s sur inscription. Notre ressource Acc&egrave;s aux D&eacute;fil&eacute;s fournit un guide d&eacute;taill&eacute; pour chaque niveau d'acc&egrave;s.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-item__question" aria-expanded="false">
-            Qu'est-ce que le Centre de Commande NYFW offre ?
+            O&ugrave; se trouvent les principaux lieux de la NYFW ?
             <span class="faq-item__icon">+</span>
           </button>
           <div class="faq-item__answer">
-            <p>Le Centre de Commande est votre ressource centralis&eacute;e pour tout ce qui concerne la NYFW : calendrier en temps r&eacute;el, guide des lieux, profils des cr&eacute;ateurs d&eacute;butants, r&eacute;pertoire des soir&eacute;es et after-parties, kits presse et analyses de tendances. C'est l'outil dont r&ecirc;vent les professionnels de la mode.</p>
+            <p>Les lieux de la NYFW sont r&eacute;partis entre Manhattan et Brooklyn. Le p&ocirc;le principal actuel est Spring Studios, au 50 Varick Street &agrave; Tribeca. Parmi les autres lieux majeurs figurent The Shed &agrave; Hudson Yards, Skylight Clarkson Square dans le West Village, Cipriani Wall Street dans le Financial District, l'Angel Orensanz Foundation dans le Lower East Side, le Pier 17 au South Street Seaport et diverses galeries &agrave; Chelsea. Les lieux de Brooklyn, en particulier Industry City &agrave; Sunset Park, prennent une importance croissante pour les d&eacute;fil&eacute;s hors calendrier et les pr&eacute;sentations de cr&eacute;ateurs ind&eacute;pendants. L'index complet des lieux avec cartes, itin&eacute;raires de transport et informations de capacit&eacute; est disponible dans l'onglet Lieux ci-dessus.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-item__question" aria-expanded="false">
-            Comment la NYFW a-t-elle &eacute;volu&eacute; ces derni&egrave;res ann&eacute;es ?
+            Quelle est la diff&eacute;rence entre les d&eacute;fil&eacute;s &laquo; on-calendar &raquo; et &laquo; off-calendar &raquo; &agrave; la NYFW ?
             <span class="faq-item__icon">+</span>
           </button>
           <div class="faq-item__answer">
-            <p>La NYFW est pass&eacute;e d'un &eacute;v&eacute;nement centralis&eacute; (les tentes de Bryant Park, puis le Lincoln Center) &agrave; un mod&egrave;le d&eacute;centralis&eacute; o&ugrave; les d&eacute;fil&eacute;s ont lieu dans des lieux vari&eacute;s &agrave; travers la ville. La pand&eacute;mie a acc&eacute;l&eacute;r&eacute; la transition vers les formats hybrides (physique + num&eacute;rique) et a ouvert la porte &agrave; davantage de cr&eacute;ateurs ind&eacute;pendants et &eacute;mergents.</p>
+            <p>Les d&eacute;fil&eacute;s on-calendar sont officiellement valid&eacute;s par le CFDA et figurent au programme officiel de la NYFW. Ces d&eacute;fil&eacute;s b&eacute;n&eacute;ficient d'une coordination presse centralis&eacute;e, de services aux acheteurs et du poids marketing de la marque NYFW. Les d&eacute;fil&eacute;s off-calendar sont produits de mani&egrave;re ind&eacute;pendante par des cr&eacute;ateurs qui choisissent de pr&eacute;senter pendant la Fashion Week sans affiliation au CFDA. Les deux font partie de l'&eacute;cosyst&egrave;me &eacute;largi de la NYFW, et certaines des pr&eacute;sentations les plus discut&eacute;es de la saison ont lieu hors calendrier. Ces derni&egrave;res ann&eacute;es, la distinction s'est assouplie : des cr&eacute;ateurs majeurs choisissent parfois des pr&eacute;sentations off-calendar pour leur libert&eacute; cr&eacute;ative, tandis que le CFDA a &eacute;largi son calendrier pour inclure davantage de voix &eacute;mergentes et ind&eacute;pendantes.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== CTA ===== -->
+    <!-- ===== CTA BANNER ===== -->
     <section class="cta-banner" aria-label="Inscription &agrave; la newsletter">
       <div class="container">
-        <h2 class="cta-banner__title fade-in">Ne Manquez Rien de la NYFW</h2>
-        <p class="cta-banner__text fade-in">Mises &agrave; jour en temps r&eacute;el pendant la Fashion Week &mdash; nouveaux d&eacute;fil&eacute;s annonc&eacute;s, r&eacute;sum&eacute;s quotidiens et analyses de tendances.</p>
-        <form class="cta-banner__form fade-in" aria-label="Formulaire d'inscription">
+        <h2 class="cta-banner__title fade-in">Ne Manquez Aucun D&eacute;fil&eacute;</h2>
+        <p class="cta-banner__text fade-in">Recevez les mises &agrave; jour du calendrier NYFW, les changements de lieux, les annonces de d&eacute;buts et les invitations aux soir&eacute;es directement dans votre bo&icirc;te mail &mdash; avant, pendant et apr&egrave;s la Fashion Week.</p>
+        <form class="cta-banner__form fade-in" aria-label="Formulaire d'inscription &agrave; la newsletter NYFW">
           <input type="email" class="cta-banner__input" placeholder="Entrez votre adresse e-mail" aria-label="Adresse e-mail" required>
           <button type="submit" class="btn btn--primary" data-success="Inscrit !">S'inscrire</button>
         </form>
